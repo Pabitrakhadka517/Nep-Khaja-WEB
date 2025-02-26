@@ -106,6 +106,14 @@ background-color: white;
 
 }
 
+.right img {
+  max-width: 70%;  /* Ensures the image does not exceed its container width */
+  height: auto;  /* Maintains the aspect ratio */
+  display: block;  /* Prevents extra space below the image */
+  margin: 0 auto;  /* Centers the image */
+}
+
+
 
 
 
@@ -152,8 +160,8 @@ background-color: white;
 .form-control .input{
   flex-basis: 70%;
   border:1px solid rgb(156 163 175);
-  border-radius: 4px;
-  height: 30px;
+  border-radius: 7px;
+  height: 45px;
   padding: 2px;
 }
 
@@ -164,22 +172,13 @@ background-color: white;
   padding: 2px;
 }
 
-/* .form button{
-  margin:2rem 0;
-  border:none;
-  width: 250px;
-  
-  background-color: #D8BFD8;
-  cursor:pointer;
-  font-size: 14px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
-} */
+
 
 .form button {
   margin: 2rem auto; /* Centers the button horizontally */
   display: block; /* Ensures the button respects auto margins */
   border: none;
-  width: 250px;
+  width: 150px;
   background-color: #D8BFD8;
   cursor: pointer;
   font-size: 14px;
@@ -258,6 +257,8 @@ background-color: white;
 
 button {
   width: 100%;
+  /* display: block;
+  margin: 0 auto; */
   padding: 12px;
   background-color: #d69ce4;
   border: none;
@@ -544,5 +545,18 @@ button:hover {
 
   .recipe-detail-container {
     width: 50%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .right img {
+      width: 80%; /* Adjust size for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .right img {
+      width: 100%; /* Adjust size for mobile */
   }
 }
